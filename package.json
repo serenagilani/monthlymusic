@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "lint": "echo \"(optional)\"",
-    "build": "echo \"vercel builds serverless/edge functions for you\"",
+    "build": "tsc",
     "update:once": "node --env-file=.env.local api/cron/update.ts"
   },
   "dependencies": {
