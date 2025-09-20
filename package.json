@@ -1,0 +1,17 @@
+{
+  "name": "spotify-redirect",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "echo \"(optional)\"",
+    "build": "echo \"vercel builds serverless/edge functions for you\"",
+    "update:once": "node --env-file=.env.local api/cron/update.ts"
+  },
+  "dependencies": {
+    "@vercel/edge-config": "1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.5.4"
+  }
+}

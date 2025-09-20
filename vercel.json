@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/current.ts": { "runtime": "edge" },
+    "api/cron/update.ts": { "runtime": "edge" }
+  },
+  "routes": [
+    { "src": "^/current$", "dest": "api/current.ts" }
+  ],
+  "crons": [
+    { "path": "/api/cron/update", "schedule": "0 11 1 * *" },
+    { "path": "/api/cron/update", "schedule": "0 11 2-7 * *" }
+  ]
+}
